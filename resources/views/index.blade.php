@@ -7,7 +7,7 @@
 	    <div>
 			    <div class="col-xs-12 col-sm-4 col-md-4" style="width: 65%;">
 			        <div class="bloco">
-			            <h2><a style="color: #7485f6; font-family: 'NeoSansStdRegular','Ropa Sans', sans-serif;" target='_blank' href="{{$feed->get_permalink()}}">{{$feed->get_title()}}</a></h2>
+							<h2><a style="color: #7485f6; font-family: 'NeoSansStdRegular','Ropa Sans', sans-serif;" target='_blank' href="{{$feed->get_permalink()}}">{{$feed->get_title()}}</a></h2>
 	<!--
 	Here, we'll loop through all of the items in the feed, and $item represents the current item in the loop.
 	-->
@@ -18,7 +18,7 @@
 				<p>{{$item->get_description()}}</p>
 				<p><small>Posted on {{$item->get_date('j F Y | g:i a')}}</small></p>
 	        </div>
-	        <button class="veja-mais-home" onclick="window.open('{{$item->get_permalink();?>');return false;" <img src="http://www.comerc.com.br/comerc/images/icones/seta.gif" alt="seta" class="img"> Veja Mais</button>
+	        <button class="veja-mais-home" onclick="window.open('{{$item->get_permalink()}}');return false;" <img src="http://www.comerc.com.br/comerc/images/icones/seta.gif" alt="seta" class="img"> Veja Mais</button>
         </div>
 	@endforeach
 	<div style="clear: both;"></div>
